@@ -1,4 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
 
 * {
   box-sizing: border-box;
