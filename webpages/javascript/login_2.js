@@ -9,3 +9,9 @@ signUpButton.addEventListener("click", () => {
 signInButton.addEventListener("click", () => {
   container.classList.remove("right-panel-active");
 });
+
+const chk = document.getElementById('chk');
+
+chk.addEventListener('change', () => {
+	document.body.classList.toggle('dark');
+});
