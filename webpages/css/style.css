@@ -13,6 +13,9 @@ ul {
   padding: 0;
   margin: 0;
 }
+img {
+  border-radius: 30px;
+}
 .container {
   padding-left: 15px;
   padding-right: 15px;
