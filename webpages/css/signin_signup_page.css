@@ -249,7 +249,7 @@ input {
   transform: translateX(-20%);
 }
 
-/* Nav & Header */
+/* Nav & Header start*/
 nav {
   background-color: #ff416c;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.09);
@@ -292,15 +292,4 @@ nav {
 .container.right-panel-active .overlay-right {
   transform: translateX(20%);
 }
-
-footer {
-  background-color: #222;
-  color: #fff;
-  font-size: 14px;
-  bottom: 0;
-  position: fixed;
-  left: 0;
-  right: 0;
-  text-align: center;
-  z-index: 999;
-}
+/* Nav & Header end*/

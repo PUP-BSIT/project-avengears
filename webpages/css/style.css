@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 a {
   text-decoration: none;
@@ -19,6 +19,52 @@ ul {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* Nav & Header start*/
+nav {
+  background-color: #ff416c;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.09);
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.nav-link {
+  color: black;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.header-left {
+  padding-right: 20px;
+  width: 60%;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+
+.container.right-panel-active .overlay-left {
+  transform: translateX(0);
+}
+
+.overlay-right {
+  right: 0;
+  transform: translateX(0);
+}
+
+.container.right-panel-active .overlay-right {
+  transform: translateX(20%);
+}
+/* Nav & Header end*/
+
 /* Small */
 @media (min-width: 768px) {
   .container {
@@ -38,6 +84,57 @@ ul {
   }
 }
 /* End Global Rules */
+
+/* themebox start*/
+body.dark {
+  background: #292c35;
+}
+
+.checkbox {
+  width: 10px;
+  opacity: 0;
+  position: relative;
+  min-width: 40%;
+}
+
+.label {
+  background-color: #111;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  height: 26px;
+  width: 50px;
+  transform: scale(1.5);
+}
+
+.label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(100%);
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
+}
+/* themebox end*/
 
 /* Start Landing Page */
 .landing-page header {
@@ -87,7 +184,7 @@ ul {
   margin-left: 30px;
   color: #5d5d5d;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
 @media (max-width: 767px) {
   .landing-page header .links li {
@@ -97,7 +194,7 @@ ul {
 .landing-page header .links li:last-child {
   border-radius: 20px;
   padding: 10px 20px;
-  color: #FFF;
+  color: #fff;
   background-color: #6c63ff;
 }
 .landing-page header .links li:not(:last-child):hover {
@@ -121,7 +218,7 @@ ul {
 @media (max-width: 767px) {
   .landing-page .content .info {
     text-align: center;
-    margin-bottom: 15px 
+    margin-bottom: 15px;
   }
 }
 .landing-page .content .info h1 {
@@ -140,7 +237,7 @@ ul {
   padding: 12px 30px;
   margin-top: 30px;
   cursor: pointer;
-  color: #FFF;
+  color: #fff;
   background-color: #6c63ff;
 }
 .landing-page .content .image img {
