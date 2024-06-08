@@ -54,7 +54,7 @@ body.dark {
 }
 
 .checkbox:checked + .label .ball {
-	transform: translateX(24px);
+	transform: translateX(100%);
 }
 
 .fa-moon {
